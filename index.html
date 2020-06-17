@@ -5,17 +5,37 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Главная страница</title>
+    <title>Document</title>
 </head>
 <body>
-    <div>
-        <form action="Reg.html" target="_self">
-            <button>Регистрация</button>
-        </form><br><br>
-
-        <!--<form action="Reg.php" target="_blank">
-            <button>Вход</button>
-        </form>-->
-    </div>
+<form action="Script.php"  method="post" target="_self">
+<table align="center" bgcolor="#b8860b" width="60%">
+    <tr>
+        <td>User</td>
+        <td>Task's title</td>
+        <td>Status</td>
+        <td>Date of changes</td>
+    </tr>
+    <tr>
+        <td>Your nickname</td>
+            <td>
+                <label>
+                <input type="text" maxlength="20" name="Title">
+            </label></td>
+            <td>
+                <label>
+                    <select name="Status">
+                        <option selected value="active">Active</option>
+                        <option value="passive">Passive</option>
+                        <option value="close">Close</option>
+                        <option value="deleted">Deleted</option>
+                    </select>
+                </label>
+            </td>
+            <td><input type="submit" formmethod="post" formtarget="_self" formaction="Script.php" value="create"></td>
+    </tr>
+</table>
+</form>
 </body>
 </html>
+

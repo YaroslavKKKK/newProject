@@ -19,9 +19,10 @@ USE `todo` ;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `todo`.`to_do_list` (
   `id` INT primary key NOT NULL AUTO_INCREMENT,
+  `nickname` VARCHAR(45) NULL,
   `title` VARCHAR(45) NULL,
   `state` VARCHAR(45) NULL,
-  `date` VARCHAR(45) NOT NULL
+  `date` VARCHAR(45) NULL
   )
 ENGINE = InnoDB;
 
